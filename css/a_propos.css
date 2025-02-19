@@ -1,0 +1,481 @@
+body
+{
+    overflow-x: hidden;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face
+{
+    font-family: 'VALORANT';
+    src: url('Valorant Font.ttf') ,
+    url('Valorant Font.ttf') ;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#navbar
+{
+    display: flex;
+    background-color: #1e1f22;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+}
+
+
+.nav-links
+{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: "VALORANT", fantasy;
+    padding: 15px;
+    margin-top: -15px;
+}
+
+.nav-links:hover
+{
+    opacity: 50%;
+}
+
+#logo
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: -66px;
+}
+
+#text
+{
+    color: white;
+    font-family: "Montserrat Alternates ExtraBold", fantasy;
+    font-size: 1.8em;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: -10px;
+    text-decoration: none;
+}
+
+#text:hover
+{
+    opacity: 50%;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 600px)
+{
+    #navbar
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 180px;
+    }
+
+    .nav-links
+    {
+        margin-top: -100px;
+    }
+
+    #logo
+    {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #text
+    {
+        color: lightgrey;
+        font-family: "Montserrat Alternates ExtraBold", fantasy;
+        font-size: 30px;
+        margin-top: -10px;
+        text-decoration: none;
+    }
+
+}
+
+@media only screen and (min-width: 505px) and (max-width: 768px)
+{
+    #navbar
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 180px;
+    }
+
+    .nav-links
+    {
+        margin-top: -65px;
+    }
+
+    #logo
+    {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #text
+    {
+        color: lightgrey;
+        font-family: "Montserrat Alternates ExtraBold", fantasy;
+        font-size: 1.5em;
+        margin-top: -10px;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (min-width: 505px) and (max-width: 1000px)
+{
+    body
+    {
+        background-color: white;
+    }
+    #navbar
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 180px;
+    }
+
+    .nav-links
+    {
+        margin-top: -65px;
+    }
+
+    #logo
+    {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #text
+    {
+        color: lightgrey;
+        font-family: "Montserrat Alternates ExtraBold", fantasy;
+        font-size: 1.8em;
+        margin-top: -10px;
+        text-decoration: none;
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+
+#conteneur_presentation
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 1000px;
+    background-color: darkred;
+}
+
+#informarions_tenz
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    color: white;
+    font-size: 1.1em;
+    font-family: "Montserrat Alternates ExtraBold", fantasy;
+    margin-top: -600px;
+}
+
+#joindre
+{
+    background-color: darkslategrey;
+    border-radius: 5px;
+    width: 300px;
+    padding: 8px;
+    font-family: "Montserrat Alternates ExtraBold", fantasy;
+    font-size: 1.3em;
+    margin: 20px;
+}
+
+
+
+.joindre_link
+{
+    color: white;
+}
+
+.joindre_link:hover
+{
+    opacity: 50%;
+}
+
+#joueur_descritption
+{
+    text-align: justify;
+    border-bottom: 1px solid grey;
+    padding: 30px;
+    margin-left: -150px;
+    margin-right: -150px;
+    margin-top: -15px;
+}
+
+#joueur_nom
+{
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 350px;
+}
+
+#joueur_config
+{
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.joueur_conf
+{
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+#config_link
+{
+    color: white;
+}
+
+#config_link:hover
+{
+    opacity: 50%;
+}
+
+@media screen and (max-width: 600px)
+{
+    #conteneur_presentation
+    {
+        display: flex;
+        height: 1000px;
+        background-color: darkred;
+    }
+
+    #informarions_tenz
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 1.2em;
+        font-family: "Montserrat Alternates ExtraBold", fantasy;
+        text-align: center;
+        margin-top: -400px;
+    }
+
+    #joueur_descritption
+    {
+        text-align: justify;
+        border-bottom: 1px solid grey;
+        padding: 30px;
+        margin-left: -30px;
+        margin-right: -20px;
+        margin-top: -15px;
+    }
+
+    #joueur_nom
+    {
+        font-size: 30px;
+        margin-top: 350px;
+        margin-left: -15px;
+    }
+
+}
+
+@media only screen and (min-width: 505px) and (max-width: 768px)
+{
+    body
+    {
+        background-color: yellow;
+    }
+    #conteneur_presentation
+    {
+        display: flex;
+        height: 1000px;
+        background-color: darkred;
+    }
+
+    #informarions_tenz
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 1.2em;
+        font-family: "Montserrat Alternates ExtraBold", fantasy;
+        margin-top: 70px;
+        margin-left: 200px;
+    }
+
+    #joueur_descritption
+    {
+        text-align: justify;
+        border-bottom: 1px solid grey;
+        padding: 30px;
+        margin-left: -200px;
+        margin-right: -20px;
+        margin-top: -600px;
+    }
+
+    #joindre
+    {
+        background-color: darkslategrey;
+        border-radius: 5px;
+        width: 300px;
+        padding: 8px;
+        font-family: "Montserrat Alternates ExtraBold", fantasy;
+        font-size: 1.2em;
+        margin-left: -150px;
+    }
+
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#last_project
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.last_grid
+{
+    border-radius: 5px;
+    padding: 20px;
+    margin: 5px;
+    height: 250px;
+    width: 400px;
+}
+
+#last-text
+{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: "Montserrat Alternates ExtraBold", fantasy;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 600px)
+{
+    #last_project
+    {
+        display: inline-block;
+        justify-content: center;
+        margin-top: 5px;
+        margin-left: 16px;
+    }
+
+    .last_grid
+    {
+        border-radius: 5px;
+        padding: 20px;
+        margin: 5px;
+        height: 250px;
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 505px) and (max-width: 768px)
+{
+
+    #last_project
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .last_grid
+    {
+        height: 250px;
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 505px) and (max-width: 1000px)
+{
+
+    #last_project
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .last_grid
+    {
+        height: 250px;
+        width: 400px;
+    }
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+
+#footer
+{
+    display: flex;
+    background-color: #1e1f22;
+    justify-content: flex-end;
+    height: 90px;
+}
+
+.footer-links
+{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Bell MT", fantasy;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.footer-links:hover
+{
+    opacity: 50%;
+}
+
+#footer_text
+{
+    color: white;
+    font-family: "Montserrat Alternates ExtraBold", fantasy;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: -60px;
+    text-decoration: none;
+}
+
+#footer_text:hover
+{
+    opacity: 50%;
+}
