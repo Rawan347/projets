@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Ressources_humaines" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7661822b-be49-48d8-807c-bd47e90788b2" name="Changes" comment="premier commit" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2pinFJE6EncNLTs0lI9tYdoetFy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "Maven.Ressources_humaines [package].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Tomcat Server.Tomcat 10.1.36.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/HP/Desktop/Java/java_JEE_code/Ressources_humaines/out/artifacts/Ressources_humaines/Ressources_humaines.war",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.applicationServers",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\Desktop\Java\java_JEE_code\Ressources_humaines\src\main\resources" />
+      <recent name="C:\Users\HP\Desktop\Java\java_JEE_code\Ressources_humaines\src\main\resources\org\example\Ressources_humaines" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="org.example.Ressources_humaines.controller" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example.ressourceshumaines" />
+      <recent name="org.example.ressources_humaines" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 10.1.36" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.36" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <file path="$PROJECT_DIR$/out/artifacts/Ressources_humaines/Ressources_humaines.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/Ressources_humaines_war" />
+          </settings>
+        </file>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="2cdc3257-f4b3-40d3-8cd2-921066a1f956" />
+        <option name="HTTP_PORT" value="8081" />
+        <option name="JNDI_PORT" value="1100" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="65356" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="false" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.153" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.153" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="StructureViewState">
+    <option name="selectedTab" value="Logical" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7661822b-be49-48d8-807c-bd47e90788b2" name="Changes" comment="" />
+      <created>1733257665430</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733257665430</updated>
+      <workItem from="1733257666487" duration="4465000" />
+      <workItem from="1733329959131" duration="332000" />
+      <workItem from="1733331905407" duration="104000" />
+      <workItem from="1733510815819" duration="2645000" />
+      <workItem from="1733769561876" duration="79000" />
+      <workItem from="1733769764441" duration="844000" />
+      <workItem from="1733938163544" duration="4715000" />
+      <workItem from="1733943533521" duration="11000" />
+      <workItem from="1734010172039" duration="10752000" />
+      <workItem from="1734027033721" duration="643000" />
+      <workItem from="1734099877921" duration="19317000" />
+      <workItem from="1734185437351" duration="9221000" />
+      <workItem from="1734196329419" duration="2961000" />
+      <workItem from="1734385338170" duration="1390000" />
+      <workItem from="1734448086627" duration="70000" />
+      <workItem from="1734626902683" duration="10537000" />
+      <workItem from="1734696540424" duration="2079000" />
+      <workItem from="1734706337086" duration="349000" />
+      <workItem from="1734706991575" duration="679000" />
+      <workItem from="1734790044936" duration="1382000" />
+      <workItem from="1735044253325" duration="632000" />
+      <workItem from="1735048878443" duration="77000" />
+      <workItem from="1735049454009" duration="1144000" />
+      <workItem from="1735050677741" duration="182000" />
+      <workItem from="1735058792490" duration="1091000" />
+      <workItem from="1735078556482" duration="6717000" />
+      <workItem from="1736184624223" duration="5084000" />
+      <workItem from="1736189997257" duration="6321000" />
+      <workItem from="1736202156895" duration="5000000" />
+      <workItem from="1736296092242" duration="545000" />
+      <workItem from="1736298002719" duration="1292000" />
+      <workItem from="1736350497429" duration="368000" />
+      <workItem from="1736351417936" duration="81000" />
+      <workItem from="1736351579920" duration="2709000" />
+      <workItem from="1736360129236" duration="2828000" />
+      <workItem from="1736421112748" duration="679000" />
+      <workItem from="1736421955676" duration="288000" />
+      <workItem from="1736423656973" duration="950000" />
+      <workItem from="1736432557700" duration="527000" />
+      <workItem from="1736437769505" duration="4625000" />
+      <workItem from="1736507660783" duration="13527000" />
+      <workItem from="1736531600369" duration="9084000" />
+      <workItem from="1736624419026" duration="10225000" />
+      <workItem from="1736925327797" duration="11531000" />
+      <workItem from="1736943778657" duration="9627000" />
+      <workItem from="1737410691269" duration="2510000" />
+      <workItem from="1737413683167" duration="1452000" />
+      <workItem from="1737415353431" duration="5928000" />
+      <workItem from="1737463882505" duration="4099000" />
+      <workItem from="1737476128874" duration="4195000" />
+      <workItem from="1737632935941" duration="875000" />
+      <workItem from="1737633881575" duration="2455000" />
+      <workItem from="1737821517222" duration="705000" />
+      <workItem from="1737822800078" duration="1215000" />
+      <workItem from="1737827037854" duration="587000" />
+      <workItem from="1737828349502" duration="3204000" />
+      <workItem from="1737836554283" duration="213000" />
+      <workItem from="1737904495119" duration="492000" />
+      <workItem from="1737905881850" duration="894000" />
+      <workItem from="1737908443189" duration="1280000" />
+      <workItem from="1737912859153" duration="1072000" />
+      <workItem from="1737914452325" duration="233000" />
+      <workItem from="1737982125547" duration="1390000" />
+      <workItem from="1737984667056" duration="263000" />
+      <workItem from="1737985048559" duration="316000" />
+      <workItem from="1737985442335" duration="373000" />
+      <workItem from="1737988191999" duration="375000" />
+      <workItem from="1737988832806" duration="261000" />
+      <workItem from="1738076707307" duration="10486000" />
+      <workItem from="1738518922631" duration="1047000" />
+      <workItem from="1738595849977" duration="934000" />
+      <workItem from="1738602972877" duration="11576000" />
+      <workItem from="1738878061328" duration="9355000" />
+      <workItem from="1739143169628" duration="5340000" />
+      <workItem from="1739148824896" duration="729000" />
+      <workItem from="1739149789708" duration="2584000" />
+      <workItem from="1739230337846" duration="1120000" />
+      <workItem from="1739231871545" duration="3858000" />
+      <workItem from="1739283491517" duration="75000" />
+      <workItem from="1739651519517" duration="20053000" />
+      <workItem from="1739702974639" duration="9514000" />
+      <workItem from="1739718380279" duration="13867000" />
+      <workItem from="1739831296579" duration="12294000" />
+      <workItem from="1739916993781" duration="6573000" />
+      <workItem from="1739924250933" duration="2578000" />
+      <workItem from="1739927037953" duration="428000" />
+      <workItem from="1740131721899" duration="1072000" />
+      <workItem from="1740134375926" duration="883000" />
+      <workItem from="1740341178478" duration="16401000" />
+      <workItem from="1740363546211" duration="1422000" />
+      <workItem from="1740765064748" duration="1599000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
