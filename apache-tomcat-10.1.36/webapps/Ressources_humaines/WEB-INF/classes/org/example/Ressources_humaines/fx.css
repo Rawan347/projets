@@ -1,0 +1,15 @@
+TextField
+{
+    -fx-border-radius: 20px;
+}
+
+Button
+{
+    -fx-border-radius: 20px;
+    -fx-font-family: "Montserrat Alternates ExtraBold";
+}
+
+Label
+{
+    -fx-font-family: "Montserrat Alternates Light";
+}
