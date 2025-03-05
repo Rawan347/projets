@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="1248.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ressources_humaines_projet.Controller.adminController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <stylesheets>
+      <URL value="@fx.css" />
+   </stylesheets>
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="1247.0" style="-fx-background-color: #3C3D37;">
+         <children>
+            <AnchorPane fx:id="PaneEmp" layoutX="-16.0" prefHeight="562.0" prefWidth="1265.0" style="-fx-background-color: #3C3D37;" visible="false">
+               <children>
+                  <Label layoutX="276.0" layoutY="34.0" text="Nom complet" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates Light" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtNom" layoutX="276.0" layoutY="67.0" prefHeight="32.0" prefWidth="255.0" style="-fx-background-color: white;" />
+                  <Label layoutX="276.0" layoutY="132.0" text="Poste" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates Light" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtPoste" layoutX="276.0" layoutY="167.0" prefHeight="32.0" prefWidth="255.0" style="-fx-background-color: white;" />
+                  <Label layoutX="276.0" layoutY="220.0" text="Date d'embauche" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates Light" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="278.0" layoutY="310.0" text="Salaire" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates Light" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtSalaire" layoutX="276.0" layoutY="347.0" prefHeight="32.0" prefWidth="255.0" style="-fx-background-color: white;" />
+                  <TableView fx:id="tblEmployes" layoutX="599.0" layoutY="33.0" onMouseClicked="#UpdateEmployeRecoverData" prefHeight="440.0" prefWidth="647.0" style="-fx-background-color: #F6F4F0;">
+                    <columns>
+                      <TableColumn fx:id="tblId" prefWidth="40.0" text="ID" />
+                        <TableColumn fx:id="tblNomComplet" prefWidth="157.0" text="Nom complet" />
+                        <TableColumn fx:id="tblPoste" prefWidth="94.0" text="Poste" />
+                        <TableColumn fx:id="tblDate" prefWidth="133.0" text="Date d'embauche" />
+                        <TableColumn fx:id="tblSalaire" prefWidth="107.0" text="Salaire" />
+                        <TableColumn fx:id="tblDepartement" prefWidth="114.0" text="Departement" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="btnAjouter" layoutX="599.0" layoutY="489.0" mnemonicParsing="false" onAction="#saveEmployee" prefHeight="48.0" prefWidth="147.0" style="-fx-background-color: #697565;" text="Ajouter" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates ExtraBold" size="18.0" />
+                     </font></Button>
+                  <Button fx:id="btnSupprimer" layoutX="873.0" layoutY="489.0" mnemonicParsing="false" onAction="#supprimerEmploye" prefHeight="48.0" prefWidth="137.0" style="-fx-background-color: #697565;" text="Supprimer" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates ExtraBold" size="18.0" />
+                     </font></Button>
+                  <Button fx:id="btnModifier" layoutX="1109.0" layoutY="489.0" mnemonicParsing="false" onAction="#UpdateEmploye" prefHeight="48.0" prefWidth="137.0" style="-fx-background-color: #697565;" text="Modifier" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates ExtraBold" size="18.0" />
+                     </font></Button>
+                  <Label layoutX="280.0" layoutY="404.0" text="departement" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates Light" size="18.0" />
+                     </font>
+                  </Label>
+                  <Pane fx:id="PaneAdmin" prefHeight="562.0" prefWidth="254.0" style="-fx-background-color: #181C14;">
+                     <children>
+                        <Line endX="126.0" layoutX="128.0" layoutY="411.0" startX="-128.0" />
+                        <Pane layoutX="-1.0" prefHeight="66.0" prefWidth="255.0" style="-fx-background-color: #697565;">
+                           <children>
+                              <Label layoutX="71.0" layoutY="17.0" text="ReaperS" textFill="WHITE">
+                                 <font>
+                                    <Font name="Montserrat Alternates ExtraBold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Button fx:id="btnEmp1" cache="true" graphicTextGap="0.0" layoutX="57.0" layoutY="246.0" mnemonicParsing="false" onAction="#openPaneEmp" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: #181C14;" text="Employés" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Alternates SemiBold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnOpenTacheFromPaneEmp" layoutX="57.0" layoutY="317.0" mnemonicParsing="false" onAction="#openPaneAdminTache" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: #181C14;" text="Tâches" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Alternates SemiBold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnDeco1" layoutX="57.0" layoutY="464.0" mnemonicParsing="false" onMouseClicked="#Deconnexion" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: #181C14;" text="Déconnexion" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Alternates SemiBold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnDepartements1" layoutX="50.0" layoutY="179.0" mnemonicParsing="false" onAction="#openPaneDepartement" prefHeight="35.0" prefWidth="167.0" style="-fx-background-color: #181C14;" text="Départements" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Alternates SemiBold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnUtil1" layoutX="57.0" layoutY="103.0" mnemonicParsing="false" onAction="#openPaneUtilisateurs" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: #181C14;" text="Utilisateurs" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Alternates SemiBold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <DatePicker fx:id="dpDate" layoutX="277.0" layoutY="256.0" prefHeight="32.0" prefWidth="255.0" />
+                  <ChoiceBox fx:id="cbxDepartement" layoutX="277.0" layoutY="443.0" prefHeight="32.0" prefWidth="255.0" style="-fx-background-color: white;" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="anchorUtil" prefHeight="562.0" prefWidth="1248.0" style="-fx-background-color: #3C3D37;">
+               <children>
+                  <Label layoutX="276.0" layoutY="114.0" text="Nom utilisateur" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates ExtraLight" size="18.0" />
+                     </font></Label>
+                  <TextField fx:id="txtNomUtilisateur" layoutX="276.0" layoutY="154.0" prefHeight="32.0" prefWidth="255.0" style="-fx-background-color: white;" />
+                  <Label layoutX="278.0" layoutY="228.0" text="Mot de passe" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates ExtraLight" size="18.0" />
+                     </font></Label>
+                  <Label layoutX="277.0" layoutY="329.0" text="Role" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates ExtraLight" size="18.0" />
+                     </font></Label>
+                  <TextField fx:id="txtRoleUtilisateur" editable="false" layoutX="276.0" layoutY="369.0" prefHeight="32.0" prefWidth="255.0" style="-fx-background-color: white;" text="Manager" />
+                  <TableView fx:id="tblUtilisateurs" layoutX="582.0" layoutY="50.0" onMouseClicked="#UpdateUtilisateur" prefHeight="416.0" prefWidth="647.0" style="-fx-background-color: #F6F4F0;">
+                    <columns>
+                      <TableColumn fx:id="tblUtilisateursId" prefWidth="41.0" text="ID" />
+                      <TableColumn fx:id="tblUtilisateursNom" prefWidth="218.0" text="Nom utilisateur" />
+                        <TableColumn fx:id="tblUtilisateursMotDePasse" prefWidth="210.0" text="Mot de passe" />
+                        <TableColumn fx:id="tblUtilisateurRole" prefWidth="176.0" text="Rôle" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="btnAjouterUtilisateur" layoutX="582.0" layoutY="491.0" mnemonicParsing="false" onAction="#saveUtilisateurs" prefHeight="48.0" prefWidth="137.0" style="-fx-background-color: #697565;" text="Ajouter" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates ExtraBold" size="18.0" />
+                     </font></Button>
+                  <Button fx:id="btnSupprimerUtilisateur" layoutX="832.0" layoutY="491.0" mnemonicParsing="false" onAction="#supprimerUtilisateur" prefHeight="48.0" prefWidth="147.0" style="-fx-background-color: #697565;" text="Supprimer" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates ExtraBold" size="18.0" />
+                     </font></Button>
+                  <Button fx:id="btnModifierUtilisateur" layoutX="1092.0" layoutY="491.0" mnemonicParsing="false" onAction="#UpdateUtilisateurs2" prefHeight="48.0" prefWidth="137.0" style="-fx-background-color: #697565;" text="Modifier" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates ExtraBold" size="18.0" />
+                     </font></Button>
+                  <Pane fx:id="PaneAdmin1" layoutX="-1.0" prefHeight="562.0" prefWidth="255.0" style="-fx-background-color: #181C14;">
+                     <children>
+                        <Line endX="126.0" layoutX="128.0" layoutY="391.0" startX="-128.0" />
+                        <Pane layoutX="-1.0" prefHeight="66.0" prefWidth="255.0" style="-fx-background-color: #697565;">
+                           <children>
+                              <Label layoutX="71.0" layoutY="17.0" text="ReaperS" textFill="WHITE">
+                                 <font>
+                                    <Font name="Montserrat Alternates ExtraBold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Button fx:id="btnEmp11" cache="true" graphicTextGap="0.0" layoutX="51.0" layoutY="232.0" mnemonicParsing="false" onAction="#openPaneEmp" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: #181C14;" text="Employés" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Alternates SemiBold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnAnchorUtilOpenTzche" layoutX="51.0" layoutY="305.0" mnemonicParsing="false" onAction="#openPaneAdminTache" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: #181C14;" text="Tâches" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Alternates SemiBold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnDeco11" layoutX="51.0" layoutY="451.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: #181C14;" text="Déconnexion" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Alternates SemiBold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnDepartements11" layoutX="43.0" layoutY="169.0" mnemonicParsing="false" onAction="#openPaneDepartement" prefHeight="35.0" prefWidth="167.0" style="-fx-background-color: #181C14;" text="Départements" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Alternates SemiBold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnUtil11" layoutX="51.0" layoutY="94.0" mnemonicParsing="false" onAction="#openPaneUtilisateurs" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: #181C14;" text="Utilisateurs" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Alternates SemiBold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <PasswordField fx:id="ptMotDePasseUtilisateur" layoutX="278.0" layoutY="267.0" prefHeight="32.0" prefWidth="255.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="PaneDepartement" prefHeight="562.0" prefWidth="1248.0" visible="false">
+               <children>
+                  <Label layoutX="28.0" layoutY="150.0" text="Nom du département" textFill="WHITE" />
+                  <TableView fx:id="tblDepartementD" layoutX="606.0" layoutY="22.0" onMouseClicked="#UpdateDepartementRecoverData" prefHeight="440.0" prefWidth="621.0" style="-fx-background-color: #F6F4F0;">
+                    <columns>
+                      <TableColumn fx:id="tblDepartementId" prefWidth="120.0" text="Id" />
+                      <TableColumn fx:id="tblNomDepartement" prefWidth="343.0" text="Nom du département" />
+                        <TableColumn fx:id="tblDepartementReesponsableId" prefWidth="157.0" text="responsable" />
+                    </columns>
+                  </TableView>
+                  <TextField id="txtNom" fx:id="txtDepartementNom" layoutX="273.0" layoutY="202.0" prefHeight="32.0" prefWidth="255.0" style="-fx-background-color: white;" />
+                  <Label layoutX="29.0" layoutY="264.0" text="Id du manager responsable " textFill="WHITE" />
+                  <Button fx:id="btnDepartementAjouter" layoutX="606.0" layoutY="488.0" mnemonicParsing="false" onAction="#saveDepartements" prefHeight="48.0" prefWidth="137.0" style="-fx-background-color: #697565;" text="Ajouter" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates ExtraBold" size="18.0" />
+                     </font></Button>
+                  <Button fx:id="btnDepartementSupprimer" layoutX="859.0" layoutY="488.0" mnemonicParsing="false" onAction="#supprimerDepartement" prefHeight="48.0" prefWidth="139.0" style="-fx-background-color: #697565;" text="Supprimer" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates ExtraBold" size="18.0" />
+                     </font></Button>
+                  <Button fx:id="btnDepartementModifier" layoutX="1090.0" layoutY="488.0" mnemonicParsing="false" onAction="#UpdateDepartement" prefHeight="48.0" prefWidth="137.0" style="-fx-background-color: #697565;" text="Modifier" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates ExtraBold" size="18.0" />
+                     </font></Button>
+                  <Pane fx:id="PaneAdmin2" layoutX="-2.0" prefHeight="562.0" prefWidth="254.0" style="-fx-background-color: #181C14;">
+                     <children>
+                        <Line endX="126.0" layoutX="128.0" layoutY="424.0" startX="-128.0" />
+                        <Pane layoutX="-1.0" prefHeight="66.0" prefWidth="255.0" style="-fx-background-color: #697565;">
+                           <children>
+                              <Label layoutX="138.0" layoutY="18.0" text="ReaperS" textFill="WHITE">
+                                 <font>
+                                    <Font name="Montserrat Alternates ExtraBold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Button fx:id="btnEmp12" cache="true" graphicTextGap="0.0" layoutX="47.0" layoutY="263.0" mnemonicParsing="false" onAction="#openPaneEmp" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: #181C14;" text="Employés" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Alternates SemiBold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnPaneDepartementOpenTachz" layoutX="47.0" layoutY="336.0" mnemonicParsing="false" onAction="#openPaneAdminTache" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: #181C14;" text="Tâches" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Alternates SemiBold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnDeco12" layoutX="51.0" layoutY="472.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: #181C14;" text="Déconnexion" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Alternates SemiBold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnDepartements12" layoutX="43.0" layoutY="198.0" mnemonicParsing="false" onAction="#openPaneDepartement" prefHeight="35.0" prefWidth="167.0" style="-fx-background-color: #181C14;" text="Départements" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Alternates SemiBold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnUtil12" layoutX="50.0" layoutY="123.0" mnemonicParsing="false" onAction="#openPaneUtilisateurs" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: #181C14; -fx-border-radius: 20;" text="Utilisateurs" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Alternates SemiBold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Label layoutX="274.0" layoutY="160.0" text="Nom du dEpartement" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates ExtraLight" size="18.0" />
+                     </font></Label>
+                  <Label layoutX="274.0" layoutY="280.0" text="Responsable" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates ExtraLight" size="18.0" />
+                     </font></Label>
+                  <ChoiceBox fx:id="cbxResponsablechoix" layoutX="274.0" layoutY="318.0" prefHeight="32.0" prefWidth="255.0" style="-fx-background-color: white;" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="PaneTacheAdminFromEmploye" prefHeight="562.0" prefWidth="1246.0" style="-fx-background-color: #3C3D37;" visible="false">
+               <children>
+                  <Label layoutX="274.0" layoutY="34.0" text="Titre" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates ExtraLight" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtTacheTitreFromEmploye" layoutX="274.0" layoutY="66.0" prefHeight="32.0" prefWidth="270.0" style="-fx-background-color: white;" />
+                  <Label layoutX="276.0" layoutY="127.0" text="Description" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates ExtraLight" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtTacheDescriptionFromEmploye" layoutX="275.0" layoutY="161.0" prefHeight="32.0" prefWidth="270.0" style="-fx-background-color: white;" />
+                  <Label layoutX="275.0" layoutY="220.0" text="Date limite" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates ExtraLight" size="18.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tblTacheFromEmploye" layoutX="566.0" layoutY="31.0" onMouseClicked="#UpdateTacheRecoverData" prefHeight="440.0" prefWidth="647.0" style="-fx-background-color: #F6F4F0;">
+                     <columns>
+                        <TableColumn fx:id="tblTacheIdentifiantFromEmploye" prefWidth="53.0" text="ID" />
+                        <TableColumn fx:id="tblTitreTacheFromEmploye" prefWidth="101.0" text="Titre" />
+                        <TableColumn fx:id="tblTacheDescriptionFromEmploye" prefWidth="181.0" text="Description" />
+                        <TableColumn fx:id="tblTacheDateFromEmploye" prefWidth="149.0" text="Date limite" />
+                        <TableColumn fx:id="tblTacheEtatFromEmploye" prefWidth="75.0" text="Etat" />
+                        <TableColumn fx:id="tblTacheEmployeIdFromEmploye" prefWidth="86.0" text="Id_employe" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="btnTacheAjouterFromEmploye" layoutX="566.0" layoutY="494.0" mnemonicParsing="false" onAction="#saveTache" prefHeight="48.0" prefWidth="137.0" style="-fx-background-color: #697565;" text="Ajouter" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates ExtraBold" size="18.0" />
+                     </font></Button>
+                  <Button fx:id="btnTacheSupprimerFromEmploye" layoutX="832.0" layoutY="494.0" mnemonicParsing="false" onAction="#supprimerTache" prefHeight="48.0" prefWidth="137.0" style="-fx-background-color: #697565;" text="Supprimer" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates ExtraBold" size="18.0" />
+                     </font></Button>
+                  <Button fx:id="btnTacheModifierFromEmploye" layoutX="1076.0" layoutY="494.0" mnemonicParsing="false" onAction="#UpdateTache" prefHeight="48.0" prefWidth="137.0" style="-fx-background-color: #697565;" text="Modifier" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates ExtraBold" size="18.0" />
+                     </font></Button>
+                  <Pane fx:id="PaneAdmin11" prefHeight="562.0" prefWidth="254.0" style="-fx-background-color: #181C14;">
+                     <children>
+                        <Pane layoutX="-1.0" prefHeight="66.0" prefWidth="255.0" style="-fx-background-color: #697565;">
+                           <children>
+                              <Label layoutX="71.0" layoutY="17.0" text="ReaperS" textFill="WHITE">
+                                 <font>
+                                    <Font name="Montserrat Alternates ExtraBold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Button fx:id="btnOpenUtilisateursFromEmploye" cache="true" graphicTextGap="0.0" layoutX="52.0" layoutY="125.0" mnemonicParsing="false" onAction="#openPaneUtilisateurs" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: #181C14;" text="Utilisateurs" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Alternates SemiBold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnOpenDépartementFromEmploye" layoutX="45.0" layoutY="185.0" mnemonicParsing="false" onAction="#openPaneDepartement" prefHeight="35.0" prefWidth="167.0" style="-fx-background-color: #181C14;" text="Départements" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Alternates SemiBold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnCloseTacheManager" layoutX="55.0" layoutY="470.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: #181C14;" text="Déconnexion" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Alternates SemiBold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Line endX="126.0" endY="-147.0" layoutX="129.0" layoutY="557.0" startX="-128.0" startY="-147.0" />
+                        <Button fx:id="btnOpenEmployeFromEmploye" layoutX="51.0" layoutY="248.0" mnemonicParsing="false" onAction="#openPaneEmp" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: #181C14;" text="Employés" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Alternates SemiBold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnOpenTacheFromEmploye" layoutX="53.0" layoutY="311.0" mnemonicParsing="false" onAction="#openPaneAdminTache" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: #181C14;" text="Tâches" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Alternates SemiBold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Label layoutX="276.0" layoutY="308.0" text="Etat" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates ExtraLight" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="276.0" layoutY="403.0" text="Identifiant de l'employe" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Alternates ExtraLight" size="18.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="dpTacheDateFromEmploye" layoutX="269.0" layoutY="253.0" prefHeight="32.0" prefWidth="270.0" />
+                  <ChoiceBox fx:id="cbxTacheEtatFromEmploye" layoutX="273.0" layoutY="338.0" prefHeight="32.0" prefWidth="270.0" style="-fx-background-color: white;" />
+                  <ChoiceBox fx:id="cbxTacheIdentifiantEmployeFromEmploye" layoutX="276.0" layoutY="436.0" prefHeight="32.0" prefWidth="270.0" style="-fx-background-color: White;" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
